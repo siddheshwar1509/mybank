@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MONEY TRANSFER</title>
+<link rel="stylesheet" href="css/transfermoney.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+
+<body>
+	
+<h1>TRANSACTION WINDOW</h1>
+	
+<!----------------transfer money-------->
+	
+<div id="container">
+
+<thead>
+	<tr>
+	<th>NAME:</th>
+	<select id="sender">
+		<option value="SENDER'S NAME">SENDER'S NAME</option>
+		<option value="Ankit Sura">Ankit Sura</option>
+		<option value="Gita Andra">Gita Andra</option>
+		<option value="Manjusha Suresh">Manjusha Suresh</option>
+		<option value="Ayush Patla">Ayush Patla</option>
+		<option value="Anik Naidu">Anik Naidu</option>
+		<option value="Ananya Gade">Ananya Gade</option>
+		<option value="Jayesh Sha">Jayesh Sha</option>
+		<option value="Hrithik Rana">Hrithik Rana</option>
+		<option value="Padma Suri">Padma Suri</option>
+		<option value="Sandhya Mane">Sandhya Mane</option>
+		
+		</select>
+	</tr>
+	
+	<tr>
+	<th>NAME:</th>
+	<select id="receiver">
+		<option value="RECEIVER'S NAME">RECEIVER'S NAME</option>
+		<option value="Ankit Sura">Ankit Sura</option>
+		<option value="Gita Andra">Gita Andra</option>
+		<option value="Manjusha Suresh">Manjusha Suresh</option>
+		<option value="Ayush Patla">Ayush Patla</option>
+		<option value="Anik Naidu">Anik Naidu</option>
+		<option value="Ananya Gade">Ananya Gade</option>
+		<option value="Jayesh Sha">Jayesh Sha</option>
+		<option value="Hrithik Rana">Hrithik Rana</option>
+		<option value="Padma Suri">Padma Suri</option>
+		<option value="Sandhya Mane">Sandhya Mane</option>
+		</select>
+	</tr>
+	</thead>
+	
+	<div class="input">ACCOUNT NO:<input id="account" type="number" placeholder="ACCOUNT NO"></div>
+	
+	<div class="input">AMOUNT<input id="amount" type="number" placeholder="AMOUNT"></div>
+	
+	<div class="input">MOBILE<input id="mobile" type="number" placeholder="MOBILE"></div>
+	
+	<button id="entry">TRANSFER</button>
+	
+	<div id="link">
+	<a href="#TRANSACTION-HISTORY">TRANSACTION HISTORY</a>
+	</div>
+	</div>
+
+
+	
+<!-------------------customer table---------->
+	
+	<table id="customers">
+	<tr>
+	<th>NAME:</th>
+	<th>AGE:</th>
+	<th>EMAIL:</th>
+	<th>ACCOUNT NO:</th>
+	<th>MOBILE:</th>
+	
+	</tr>
+
+	
+<!--------------table data------------>
+	
+	<tr>
+	<td>Ankit Sura</td>
+	<td>20</td>
+	<td>ankit@email.com</td>
+	<td>346332915335244</td>
+	<td>+91 71296 73923</td>
+	</tr>
+	
+	<tr>
+	<td>Gita Andra</td>
+	<td>35</td>
+	<td>gita@email.com</td>
+	<td>372535574934290</td>
+	<td>+91 61279 85026</td>
+	</tr>
+	
+	<tr>
+	<td>Manjusha Suresh</td>
+	<td>32</td>
+	<td>manjusha@email.com</td>
+	<td>379329330500089</td>
+	<td>+91 79313 36406</td>
+	</tr>
+	
+	<tr>
+	<td>Ayush Patla</td>
+	<td>24</td>
+	<td>ayush@email.com</td>
+	<td>343932475292686</td>
+	<td>+91 79798 13151</td>
+	</tr>
+	
+	<tr>
+	<td>Anik Naidu</td>
+	<td>45</td>
+	<td>anik@email.com</td>
+	<td>375755935473443</td>
+	<td>+91 61279 42542</td>
+	</tr>
+	
+	<tr>
+	<td>Ananya Gade</td>
+	<td>49</td>
+	<td>ananya@email.com</td>
+	<td>36202049119829</td>
+	<td>+91 61296 82732</td>
+	</tr>
+	
+	<tr>
+	<td>Jayesh Sha</td>
+	<td>65</td>
+	<td>jayesh@email.com</td>
+	<td>30193894996963</td>
+	<td>+91 70613 49658</td>
+	</tr>
+	
+	<tr>
+	<td>Hrithik Rana</td>
+	<td>51</td>
+	<td>hrithik@email.com</td>
+	<td>36512910167313</td>
+	<td>+91 98073 61157</td>
+	</tr>
+	
+	<tr>
+	<td>Padma Suri</td>
+	<td>38</td>
+	<td>padma@email.com</td>
+	<td>36100646128625</td>
+	<td>+91 72855 93020</td>
+	</tr>
+	
+	<tr>
+	<td>Sandhya Mane</td>
+	<td>46</td>
+	<td>sandhya@email.com</td>
+	<td>30299553923121</td>
+	<td>+91 61279 03184</td>
+	</tr>
+	
+	</table>
+	
+<!---------transfer history-------->
+	
+	
+	<table id="display">
+	<span id="TRANSACTION-HISTORY"><h1 id="header">TRANSACTION HISTORY</h1></span>
+	<tr>
+		<th>SENDER</th>
+		<th>RECEIVER</th>
+		<th>ACCOUNT NO</th>
+		<th>AMOUNT</th>
+		<th>MOBILE</th>
+	</tr>
+	</table>
+	
+<!-----------script--------->
+	
+<script src="script.js"></script>
+	
+	
+	<!-----------------header------------>
+	<nav>
+		<div class="logo">BANK</div>
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="topics.html">TOPICS</a></li>
+			<li><a href="about.html">ABOUT</a></li>
+			<li><a href="contact.html">CONTACT US</a></li>
+		</ul>
+	</nav>
+	<section></section>
+	
+
+	
+
+	
+</body>
+</html>
